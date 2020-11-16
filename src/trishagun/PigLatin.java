@@ -6,7 +6,6 @@ public class PigLatin {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String word1 = JOptionPane.showInputDialog("Enter word1 " + ": ");
 		String str1 = "way";
 		String str2 = "ay";
 		String pigword;
@@ -14,13 +13,16 @@ public class PigLatin {
 		String splitword = "";
 		String firstLetter = "";
 		int index = 0;
+		
+		//User input
+		String word1 = JOptionPane.showInputDialog("Enter a word " + ": ");
 		// first step -- convert to lower case
 		word1 = word1.toLowerCase();
 
-		int j = 0;
-		// int i = 0;
+
 		String split = "";
 		String letter1 = "";
+		int j = 0;
 		while (j < word1.length()) {
 			String singleLetter = String.valueOf(word1.charAt(j)); // retrieve single letter of String word1 //o
 
